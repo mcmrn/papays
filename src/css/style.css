@@ -104,9 +104,35 @@ textarea {
   vertical-align: top;
   font-family: inherit;
 }
+th {
+  border-bottom: 1px dashed #272627;
+  padding: 0.5rem 0;
+}
+td {
+  padding: 1rem 0;
+}
 input,
 button {
   font-family: inherit;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 .container {
   max-width: 110rem;
@@ -513,7 +539,14 @@ button {
   height: 100%;
   position: absolute;
   top: 0;
-  color: #fff;
+  color: #090708;
+}
+.cart__heading {
+  z-index: 1;
+  position: absolute;
+  top: 6rem;
+  text-align: center;
+  width: 100%;
 }
 .cart__wrapper {
   display: flex;
@@ -521,6 +554,9 @@ button {
   align-items: center;
   height: 100%;
   gap: 5rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  border-radius: 10rem 10rem 0 0;
 }
 .cart__table {
   width: 45rem;
@@ -528,6 +564,7 @@ button {
 .cart__table table {
   width: 100%;
   text-align: left;
+  border-collapse: collapse;
 }
 .cart__table table tr td input {
   width: 5rem !important;
@@ -575,7 +612,7 @@ button {
   height: 100%;
   position: absolute;
   top: 0;
-  color: #fff;
+  color: #090708;
 }
 .billing__wrapper {
   display: flex;
@@ -584,6 +621,9 @@ button {
   height: 100%;
   gap: 5rem;
   padding-top: 8rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  border-radius: 10rem 10rem 0 0;
 }
 .billing__form {
   width: 40rem;
