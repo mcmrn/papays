@@ -7,6 +7,19 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  color: #101010;
+  font-family: "Denk One", sans-serif;
+  line-height: 1.6;
 }
 html,
 body,
@@ -34,24 +47,12 @@ tr,
 th,
 td {
   border: 0;
-  font-family: inherit;
   font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
   margin: 0;
   outline: 0;
   padding: 0;
   vertical-align: baseline;
   scroll-behavior: smooth;
-}
-html {
-  font: 62.5%;
-}
-body {
-  font-size: 1.6rem;
-  color: #101010;
-  font-family: "Denk One", sans-serif;
-  line-height: 1.6;
 }
 h1,
 h2,
@@ -101,6 +102,11 @@ hr {
 textarea {
   overflow: auto;
   vertical-align: top;
+  font-family: inherit;
+}
+input,
+button {
+  font-family: inherit;
 }
 .container {
   max-width: 110rem;
@@ -227,6 +233,7 @@ textarea {
 }
 .info__name h3 {
   font-weight: 700;
+  font-size: 2.5rem;
 }
 .info__number,
 .info__email,
@@ -248,17 +255,26 @@ textarea {
 .fa-brands.fa-facebook::before {
   background: linear-gradient(0deg, #0066ef 0%, #00b2ff 100%);
   color: #fff;
-  border-radius: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
 }
-.fa-brands.fa-facebook-messenger {
+.fa-brands.fa-facebook-messenger::before {
   background: linear-gradient(0deg, #0066ef 0%, #00b2ff 100%);
   color: #fff;
-  border-radius: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
 }
-.fa-brands.fa-whatsapp {
+.fa-brands.fa-whatsapp::before {
   background: #00cd4c;
   color: #fff;
-  border-radius: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
 }
 .info__video {
   height: 20rem;
@@ -271,6 +287,9 @@ textarea {
 }
 .reviews {
   margin-bottom: 5rem;
+}
+.reviews__name p {
+  font-size: 2rem;
 }
 .reviews__slideshow {
   position: relative;
@@ -285,7 +304,7 @@ textarea {
   font-weight: 700;
 }
 .reviews__card {
-  background-color: #181818;
+  background-color: #272627;
   color: #fff;
   padding: 2rem;
 }
@@ -363,7 +382,7 @@ textarea {
   background-color: #717171;
 }
 .rating {
-  background-color: #181818;
+  background-color: #272627;
   color: #fff;
   padding: 2rem;
 }
@@ -413,8 +432,10 @@ textarea {
   cursor: pointer;
 }
 .footer {
+  color: #fff;
   text-align: center;
-  padding: 2rem 2rem 0;
+  padding: 2rem 2rem 1rem;
+  background-color: #090708;
 }
 .footer p {
   font-size: 1.2rem;
@@ -608,4 +629,13 @@ textarea {
 .contact .rating__heading h2 {
   font-family: "Kolker Brush", cursive;
   font-size: 5rem;
+}
+.info__contact > div {
+  padding-bottom: 1rem;
+}
+.info__social p {
+  margin-bottom: 1rem;
+}
+.social__icon a {
+  margin: 0 1rem;
 }
