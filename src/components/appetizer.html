@@ -10,6 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
+  
+    
   </head>
   <body>
     <section class="container">
@@ -43,12 +45,16 @@
             </nav>
           </div>
           <div class="banner__cart">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+              <script src="store.js" async></script>
+            
+            </a>
           </div>
         </div>
         <div class="appetizer__title">
           <h2>Papay's Appetizer</h2>
         </div>
+       
         <div class="appetizer__label">
           <h2>Fried and Sticks</h2>
         </div>
@@ -57,42 +63,28 @@
             <div class="appetizer__img">
               <img src="../../public/img/default.jpg" alt="" />
             </div>
-            <div class="appetizer__name">
-              <h4>French Fries</h4>
+              <div class="appetizer__name">
+              <h4><span class="food-name">Fried Shrimp</h4></span>
             </div>
             <div class="appetizer__price">
-              <h4>Php 00.0</h4>
+              <h4><span class="food-price">Php 70.00</span></h4>
             </div>
             <div class="appetizer__btn">
-              <button>Add to Cart</button>
+              <button class="btn_add" type="button">Add to Cart</button>
             </div>
           </div>
           <div class="appetizer__item">
             <div class="appetizer__img">
               <img src="../../public/img/default.jpg" alt="" />
             </div>
-            <div class="appetizer__name">
-              <h4>Fried Shrimp</h4>
+              <div class="appetizer__name">
+              <h4><span class="food-name">Onion Rings</h4></span>
             </div>
             <div class="appetizer__price">
-              <h4>Php 00.0</h4>
+              <h4><span class="food-price">Php 50.00</span></h4>
             </div>
             <div class="appetizer__btn">
-              <button>Add to Cart</button>
-            </div>
-          </div>
-          <div class="appetizer__item">
-            <div class="appetizer__img">
-              <img src="../../public/img/default.jpg" alt="" />
-            </div>
-            <div class="appetizer__name">
-              <h4>Onion Rings</h4>
-            </div>
-            <div class="appetizer__price">
-              <h4>Php 00.0</h4>
-            </div>
-            <div class="appetizer__btn">
-              <button>Add to Cart</button>
+              <button class="btn_add" type="button">Add to Cart</button>
             </div>
           </div>
           <div class="appetizer__item">
@@ -166,6 +158,10 @@
             </div>
           </div>
         </div>
+
+            
+        
+      
         <div class="appetizer__label">
           <h2>Salad</h2>
         </div>
@@ -233,6 +229,8 @@
           </div>
         </div>
       </div>
+
+      
       <footer class="footer">
         <div class="info__contact">
           <div class="info__name">
@@ -291,6 +289,6 @@
         <p>&copy 2022</p>
       </footer>
     </section>
-    <script src="../js/main.js"></script>
+   
   </body>
 </html>

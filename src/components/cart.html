@@ -10,6 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="store.js" async></script>
+    
   </head>
   <body>
     <section class="container">
@@ -61,42 +63,51 @@
                 <th>Subtotal</th>
                 <th></th>
               </tr>
+          <div>
               <tr>
                 <td>
                   Laing <br />
                   Php 75.00
                 </td>
                 <td>
-                  <input type="number" value="1" min="1" />
+                  <input class="cart-quantity" type="number" value="1" min="1" />
                 </td>
-                <td>Php 75.00</td>
-                <td><i class="fa-solid fa-trash"></i></td>
-              </tr>
+                <td><span class="cart-price cart column">Php 75.00</span></td>
+                <td><button class ="btn btn-remove" type="button">Remove</i></button></td>         
+              </tr> 
+          </div>
+          
+
+          <div>
               <tr>
                 <td>
                   Pork Adobo <br />
                   Php 95.00
                 </td>
                 <td>
-                  <input type="number" value="1" min="1" />
+                  <input class="cart-quantity" type="number" value="1" min="1" />
                 </td>
-                <td>Php 95.00</td>
-                <td><i class="fa-solid fa-trash"></i></td>
+                <td><span class="cart-price cart column">Php 95.00</span></td>
+                <td><button class ="btn btn-remove" type="button">Remove</i></button></td>
               </tr>
+            </div>
+            
             </table>
           </div>
-          <div class="cart__summary">
+
+
+           <div class="cart__summary">
             <div class="cart__label">
               <h4>Order Summary</h4>
             </div>
             <div class="cart__list">
               <div class="cart__item">
                 <p>Laing</p>
-                <p>Php 75.00</p>
+                <span>75.00</span>
               </div>
               <div class="cart__item">
                 <p>Pork Adobo</p>
-                <p>Php 95.00</p>
+                <span>95.00</span>
               </div>
 
               <div class="cart__sub">
@@ -108,7 +119,7 @@
               <div class="cart__total">
                 <div class="cart__item">
                   <p>Total</p>
-                  <p>Php 165.00</p>
+                  <span class="Total-price">Php 00.00</span>
                 </div>
               </div>
             </div>
@@ -177,6 +188,8 @@
         <p>&copy 2022</p>
       </footer>
     </section>
-    <script src="../js/main.js"></script>
+   
+
+
   </body>
 </html>

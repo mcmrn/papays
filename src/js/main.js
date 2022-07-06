@@ -26,3 +26,4 @@ function isShow(n) {
   slideItem[slideCount - 1].style.display = "block";
   dots[slideCount - 1].className += " reviews--active";
 }
+
