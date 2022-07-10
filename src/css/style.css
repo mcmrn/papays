@@ -182,7 +182,7 @@ button {
   background-color: #101010;
   min-width: 15rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 9;
 }
 .dropdown--content a {
   color: #fff;
@@ -685,7 +685,7 @@ height: 300px;
 .social__icon a {
   margin: 0 1rem;
 }
-/*---------------------------------------------------------------------------------------------*/
+
 
 .products{
   float:left;
@@ -699,8 +699,4 @@ width: 7%;
 margin-left: 10%;
 
 }
-
-
-
-
 
