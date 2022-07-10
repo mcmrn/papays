@@ -114,6 +114,8 @@ td {
 input,
 button {
   font-family: inherit;
+  
+  
 }
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -587,7 +589,7 @@ button {
 }
 .cart__item {
   display: flex;
-  justify-content: space-between;
+  justify-content:baseline;
 }
 .cart__btn {
   margin-top: 5rem;
@@ -595,9 +597,9 @@ button {
 }
 .cart__btn a,
 .cart__btn button {
-  border: 2px solid #fff;
+  border: 2px solid rgb(49, 43, 43);
   border-radius: 25rem;
-  padding: 0.7rem;
+  padding: 0.1rem;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -606,6 +608,10 @@ button {
 }
 .cart__total {
   margin-top: 5rem;
+  float:left;
+width:700px;
+overflow-y: scroll;
+height: 300px;
 }
 .billing {
   width: 100%;
@@ -679,5 +685,22 @@ button {
 .social__icon a {
   margin: 0 1rem;
 }
+/*---------------------------------------------------------------------------------------------*/
+
+.products{
+  float:left;
+width:700px;
+overflow-y: scroll;
+height: 300px;
+
+}
+.cartInput{
+width: 7%;
+margin-left: 10%;
+
+}
+
+
+
 
 
