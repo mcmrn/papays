@@ -20,5 +20,8 @@
   "homepage": "https://mcmrn.github.io/papays",
   "devDependencies": {
     "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
+    "build": "^0.1.4"
   }
 }
