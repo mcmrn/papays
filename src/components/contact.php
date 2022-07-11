@@ -4,9 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require("../../rest/PHPMailer/Exception.php");
-require("../../rest/PHPMailer/SMTP.php");
-require("../../rest/PHPMailer/PHPMailer.php");
+require("./PHPMailer/Exception.php");
+require("./PHPMailer/SMTP.php");
+require("./PHPMailer/PHPMailer.php");
 
 if (isset($_POST['submit'])) {
   $name = $_POST['name'];
@@ -146,7 +146,7 @@ if (isset($_POST['submit'])) {
         </div>
       </div>
       <div class="banner__img">
-        <img src="../../public/img/burgirs 1.png" alt="" />
+        <img src="burgirs 1.png" alt="" />
       </div>
     </div>
     <div class="contact">
@@ -222,7 +222,7 @@ if (isset($_POST['submit'])) {
       <p>&copy 2022 Papay's Smoke Grill and Cafe</p>
     </footer>
   </section>
-  <script src="../js/main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 
