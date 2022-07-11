@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy" : "gh-pages -d src/components"
-  }, 
+    "deploy": "gh-pages -d src/components"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mcmrn/papays.git"
