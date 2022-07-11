@@ -1,0 +1,696 @@
+@import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Denk+One&family=Kolker+Brush&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  color: #101010;
+  font-family: "Denk One", sans-serif;
+  line-height: 1.6;
+}
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+form,
+iframe,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: normal;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+h3 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+h4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+h6 {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+hr {
+  border-top: 1px solid #ddd;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  font-family: inherit;
+}
+th {
+  border-bottom: 1px dashed #272627;
+  padding: 0.5rem 0;
+}
+td {
+  padding: 1rem 0;
+}
+input,
+button {
+  font-family: inherit;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.banner {
+  margin-bottom: 5rem;
+  position: relative;
+}
+.banner__header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  z-index: 9;
+  color: #fff;
+}
+.banner__logo h1 {
+  font-family: "Denk One", sans-serif;
+}
+.banner__nav nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.banner__nav nav ul li {
+  margin: 0 1rem;
+}
+.banner__nav nav ul li a {
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+}
+.banner__nav nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+.banner__dropdown {
+  position: relative;
+  display: block;
+}
+.dropdown--content {
+  display: none;
+  position: absolute;
+  background-color: #101010;
+  min-width: 15rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+.dropdown--content a {
+  color: #fff;
+  padding: 0.5rem;
+  display: block;
+}
+
+.dropdown--content a:hover {
+  background-color: hsl(72, 4%, 35%);
+  color: #fff;
+  border: none !important;
+}
+
+.banner__dropdown:hover .dropdown--content {
+  display: block;
+}
+.active--nav {
+  border-bottom: 2px solid #fff;
+}
+.banner__img {
+  height: 100vh;
+}
+.banner__img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.banner__content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.banner__tagline {
+  font-family: "Kolker Brush", cursive;
+}
+.banner__tagline h2 {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+.banner__desc {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.banner__btn a {
+  border: 2px solid #fff;
+  border-radius: 25rem;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  margin: 0 3rem 5rem;
+}
+.info__contact {
+  text-align: center;
+}
+.info__name h3 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.info__number,
+.info__email,
+.info__address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info__number i,
+.info__email i,
+.info__address i {
+  margin-right: 1rem;
+}
+.info__number p,
+.info__email p,
+.info__address p {
+  font-size: 1.2rem;
+}
+.fa-brands.fa-facebook::before {
+  background: linear-gradient(0deg, #0066ef 0%, #00b2ff 100%);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+.fa-brands.fa-facebook-messenger::before {
+  background: linear-gradient(0deg, #0066ef 0%, #00b2ff 100%);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+.fa-brands.fa-whatsapp::before {
+  background: #00cd4c;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+}
+.info__video {
+  height: 20rem;
+}
+.info__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.reviews {
+  margin-bottom: 5rem;
+}
+.reviews__name p {
+  font-size: 2rem;
+}
+.reviews__slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.reviews__title {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.reviews__title h2 {
+  font-weight: 700;
+}
+.reviews__card {
+  background-color: #272627;
+  color: #fff;
+  padding: 2rem;
+}
+.reviews__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.reviews__icon i {
+  font-size: 3rem;
+}
+.reviews__desc {
+  margin: 0 5rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.reviews__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.reviews__dot {
+  text-align: center;
+  margin-top: 1rem;
+}
+.reviews--slides {
+  display: none;
+}
+.reviews--fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.reviews--prev,
+.reviews--next {
+  cursor: pointer;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+  border-radius: 0.3rem;
+  user-select: none;
+  border: none;
+  background-color: transparent;
+  margin-top: -2rem;
+}
+.reviews--prev:hover,
+.reviews--next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.reviews--dot {
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.reviews--active,
+.reviews--dot:hover {
+  background-color: #717171;
+}
+.rating {
+  background-color: #272627;
+  color: #fff;
+  padding: 2rem;
+}
+.rating__heading h2 {
+  font-weight: 700;
+}
+.rating__heading p {
+  font-size: 1.2rem;
+}
+.rating__label {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+.rating__label h3 {
+  margin-right: 5rem;
+}
+.rating__label i {
+  margin: 0 0.2rem;
+}
+.rating__inputs {
+  width: 50rem;
+  margin: 0 auto;
+}
+.rating__inputs textarea {
+  height: 10rem;
+  width: 100%;
+  padding: 0.5rem;
+  outline: 0;
+}
+.rating__inputs input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: 0;
+}
+.inputs__wrapper {
+  margin-bottom: 1rem;
+}
+.rating__btn {
+  text-align: center;
+}
+.rating__btn button {
+  border: 0;
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.footer {
+  color: #fff;
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+  background-color: #090708;
+}
+.footer p {
+  font-size: 1.2rem;
+}
+.appetizer {
+  color: #fff;
+  height: 100%;
+  background-color: #181818;
+  padding: 0 0 5rem;
+  position: relative;
+}
+.appetizer__title {
+  text-align: center;
+  font-family: "Kolker Brush", cursive;
+  padding: 5rem 0 1rem;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+}
+.appetizer__title::before,
+.appetizer__title::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  background-color: #fff;
+}
+.appetizer__title h2 {
+  font-size: 5rem;
+}
+.appetizer__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  grid-gap: 5rem;
+  margin: 0 4rem;
+}
+.appetizer__label {
+  margin: 4rem 0 2rem 5rem;
+}
+.appetizer__item {
+  width: 20rem;
+}
+.appetizer__img {
+  width: 100%;
+  height: 15rem;
+}
+.appetizer__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.appetizer__name,
+.appetizer__price,
+.appetizer__btn {
+  text-align: center;
+  background-color: #fff;
+  color: #101010;
+  padding: 1rem;
+}
+.appetizer__btn button {
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.cart {
+  margin-bottom: 5rem;
+  position: relative;
+}
+.cart__checkout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: #090708;
+}
+.cart__heading {
+  z-index: 1;
+  position: absolute;
+  top: 6rem;
+  text-align: center;
+  width: 100%;
+}
+.cart__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  border-radius: 10rem 10rem 0 0;
+}
+.cart__table {
+  width: 45rem;
+}
+.cart__table table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.cart__table table tr td input {
+  width: 5rem !important;
+  height: 2rem !important;
+  text-align: center;
+}
+.cart__summary {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #101010;
+  width: 25rem;
+}
+.cart__label {
+  text-align: center;
+  border-bottom: 1px solid #717171;
+}
+.cart__label h4 {
+  font-weight: 700 !important;
+}
+.cart__item {
+  display: flex;
+  justify-content: baseline;
+}
+.cart__btn {
+  margin-top: 5rem;
+  text-align: center;
+}
+.cart__btn a,
+.cart__btn button {
+  border: 2px solid rgb(49, 43, 43);
+  border-radius: 25rem;
+  padding: 0.1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.cart__sub {
+  border-top: 1px solid #717171;
+}
+.cart__total {
+  margin-top: 5rem;
+  float: left;
+  width: 700px;
+  overflow-y: scroll;
+  height: 300px;
+}
+.billing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: #090708;
+}
+.billing__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5rem;
+  padding-top: 8rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  border-radius: 10rem 10rem 0 0;
+}
+.billing__form {
+  width: 40rem;
+}
+.billing__name,
+.billing__phone {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.billing__name input,
+.billing__phone input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: 0;
+}
+.billing__address textarea,
+.billing__additional textarea {
+  padding: 0.5rem;
+  width: 100%;
+  height: 5rem;
+  outline: 0;
+}
+.billing__address {
+  margin-bottom: 1rem;
+}
+.billing__additional {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+.contact {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  margin-top: 5rem;
+}
+.contact .rating__heading {
+  text-align: center;
+}
+.contact .rating__heading h2 {
+  font-family: "Kolker Brush", cursive;
+  font-size: 5rem;
+}
+.info__contact > div {
+  padding-bottom: 1rem;
+}
+.info__social p {
+  margin-bottom: 1rem;
+}
+.social__icon a {
+  margin: 0 1rem;
+}
+
+.products {
+  float: left;
+  width: 700px;
+  overflow-y: scroll;
+  height: 300px;
+}
+.cartInput {
+  width: 7%;
+  margin-left: 10%;
+}
