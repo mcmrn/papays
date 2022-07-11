@@ -37,13 +37,15 @@
                   </div>
                 </li>
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="banner__cart">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"><span>0</span></i></a
+            >
           </div>
         </div>
 
@@ -51,70 +53,39 @@
           <img src="../../public/img/burgirs 1.png" alt="" />
         </div>
       </div>
+      <div class="cart__heading">
+        <h2>- Cart -</h2>
+      </div>
       <div class="cart__checkout">
         <div class="cart__wrapper">
           <div class="cart__table">
-            <table>
-              <tr>
-                <th>Product Details</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>
-                  Laing <br />
-                  Php 75.00
-                </td>
-                <td>
-                  <input type="number" value="1" min="1" />
-                </td>
-                <td>Php 75.00</td>
-                <td><i class="fa-solid fa-trash"></i></td>
-              </tr>
-              <tr>
-                <td>
-                  Pork Adobo <br />
-                  Php 95.00
-                </td>
-                <td>
-                  <input type="number" value="1" min="1" />
-                </td>
-                <td>Php 95.00</td>
-                <td><i class="fa-solid fa-trash"></i></td>
-              </tr>
-            </table>
+            <div>
+              <table>
+                <tr>
+                  <th>Product Details</th>
+                  <th>Price</th>
+                  <th>Subtotal</th>
+                  <td>
+                    <button class="btn-remove" type="button">
+                      Clear <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="products"></div>
           </div>
+
           <div class="cart__summary">
             <div class="cart__label">
               <h4>Order Summary</h4>
             </div>
-            <div class="cart__list">
-              <div class="cart__item">
-                <p>Laing</p>
-                <p>Php 75.00</p>
-              </div>
-              <div class="cart__item">
-                <p>Pork Adobo</p>
-                <p>Php 95.00</p>
-              </div>
 
-              <div class="cart__sub">
-                <div class="cart__item">
-                  <p>Subtotal</p>
-                  <p>Php 165.00</p>
-                </div>
-              </div>
-              <div class="cart__total">
-                <div class="cart__item">
-                  <p>Total</p>
-                  <p>Php 165.00</p>
-                </div>
-              </div>
-            </div>
+            <div class="cart__total"></div>
             <div class="cart__btn">
               <a href="checkout.html">Checkout</a>
             </div>
+            <div class="total1"></div>
           </div>
         </div>
       </div>
@@ -177,6 +148,6 @@
         <p>&copy 2022</p>
       </footer>
     </section>
-    <script src="../js/main.js"></script>
+    <script src="../js/function.js"></script>
   </body>
 </html>
